@@ -71,20 +71,8 @@ const Topbar: FC<TopbarProps> = ({ width, showThemeToggle, toggleTheme }) => {
         {showThemeToggle && <Toggle toggleTheme={toggleTheme} />}
         <Zoom>
           {topbar.view}
-          <IconButton
-            isDisabled={!isPrevZoom}
-            onClick={zoomOut}
-            isFullRounded
-            iconName="subtract"
-            width="14"
-          />
-          <IconButton
-            isDisabled={!isNextZoom}
-            onClick={zoomIn}
-            isFullRounded
-            iconName="add"
-            width="14"
-          />
+          <IconButton isDisabled={!isPrevZoom} onClick={zoomOut} iconName="subtract" width="14" />
+          <IconButton isDisabled={!isNextZoom} onClick={zoomIn} iconName="add" width="14" />
         </Zoom>
       </OptionsContainer>
     </Wrapper>

@@ -120,6 +120,10 @@ export type SchedulerProjectData = {
    * Indicates if item is generated. Optional
    */
   isGenerated?: boolean;
+  /**
+   * Background image of the tile. Optional
+   */
+  background?: string;
 };
 
 export type Day = {
